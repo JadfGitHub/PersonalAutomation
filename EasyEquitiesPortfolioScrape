@@ -69,9 +69,16 @@ sec.push([ security, shares, FSRs, purchaseVal, currentVal]);
 }
 )
 
+//include cash as a line-item in sec:
+var cash=$('#account-value-view > div.control-margin-bottom > div > div.col-md-9.col-xs-12 > div > table > tbody > tr:nth-child(2) > td:nth-child(4) > span').text().trim();
+sec.push(['cash','0','0','0',cash]);
+
 //create a date/time string to be used in the file name
 var now = new Date();
 var currentDateTimeString = now.getMonth()+1 + '-' + now.getDate() + '-' + now.getFullYear() + '-' + now.getHours() + now.getMinutes() + now.getSeconds();
 
+//include acc no. in file name
+var accNo=$('#account-overview-accnumber').text().trim()
+
 //generate file
-exportToCsv('EE_Scrape' + currentDateTimeString + '.csv', sec);
+exportToCsv('EE_Scrape_' + accNo + '_' + currentDateTimeString + '.csv', sec);
