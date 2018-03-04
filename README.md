@@ -2,7 +2,7 @@
 Assorted scripts and code to automate or streamline otherwise manual tasks
 
 This repository includes:
-1.Code to scrape portfolio data from EasyEquities.
+- Code to scrape portfolio data from EasyEquities.
 
 ## EasyEquities Portfolio Scrape
 Next steps (enhancements):
