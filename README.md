@@ -11,3 +11,6 @@ Next steps (enhancements):
 - Automatically classify each security in terms of asset class, geography and sector - classes aligned with All Weather portfolio or David Swensen portfolio - this can include sourcing security information from a rating agency (e.g. MorningStar) or from Yahoo Finance.
 - Include recommendation feature to suggest next investments or portfolio changes to align with All Weather or David Swensen portfolio.
 - Incorporate into server-side JavaScript application/script. This script is currently run in the web-browser (Google Chrome) console.
+
+## Synchronize Podcasts Script
+A Git Bash script to synchronize podcasts on an exernal MP3 player. Specified podcast folders are mirrored on the MP3 player to reflect the contents the corresponding folder on the local drive.
