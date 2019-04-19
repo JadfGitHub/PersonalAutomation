@@ -70,7 +70,8 @@ sec.push([ security, shares, FSRs, purchaseVal, currentVal]);
 )
 
 //include cash as a line-item in sec:
-var cash=$('#account-value-view > div.control-margin-bottom > div > div.col-md-9.col-xs-12 > div > table > tbody > tr:nth-child(2) > td:nth-child(4) > span').text().trim();
+var cash=$("#summary-items > div:nth-child(2) > div > div:nth-child(1) > div > div.row.accordion-heading.hand.collapsed > div.col-xs-6.text-align-right > span.bold-heavy").text().trim();
+//var cash=$('#account-value-view > div.control-margin-bottom > div > div.col-md-9.col-xs-12 > div > table > tbody > tr:nth-child(2) > td:nth-child(4) > span').text().trim();
 sec.push(['cash','0','0','0',cash]);
 
 //create a date/time string to be used in the file name
